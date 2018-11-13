@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<title>Front Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/app.css">
+
+
+
+
+<body id="myPage">
+  <p> This is a test</p>
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="/profile.ejs" class="w3-bar-item w3-button">Profile</a>
+  <a href="/color.ejs" class="w3-bar-item w3-button">Projects</a>
+  <a href="#tech" class="w3-bar-item w3-button">Technologies</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-teal w3-left-align">
+
+<!--Burger icon 'fa fa-bar' on top right for small screen -->
+<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+
+  <a href="#" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+
+  <a href="\profile" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Profile</a>
+
+  <a href="\color" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Projects</a>
+  
+  <a href="#tech" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Technologies</a>
+
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Contact</a>
+
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+    </div>
+  </div>
+
+
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="\profile" class="w3-bar-item w3-show w3-button">Profile</a>
+    <a href="\color" class="w3-bar-item w3-button">Projects</a>
+    <a href="#tech" class="w3-bar-item w3-button">Technologies</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+
+<!-- Image Header -->
+<div class="w3-display-container  w3-circle w3-animate-opacity">
+  <img src="https://source.unsplash.com/random/?spectrums" alt="spectrums" style="width:100%;min-height:350px;max-height:350px">
+</div>
+
+
+<div  class="w3-container ">
+
+    <div class=" w3-center w3-panel ">
+    <iframe src="\profile" height="260px" width="100%"  class="w3-border-3  w3-center w3-panel w3-card-4"> </iframe>
+    </div>
+    
+    <div class="w3-bar w3-theme-d2 w3-teal w3-right-align">
+  <span>Refresh the page to get a new image. Courtesy of www.unsplash.com w3-border-teal</span>
+  
+</div>
+
+
+<div  id="tech"class="w3-container w3-display-container">
+  <div id="techcard" class="w3-border-3 w3-center w3-teal w3-panel w3-card-4">
+  
+  <div  class=" iconbox w3-large w3-theme-d2 w3-teal w3-cell-row">
+
+    <p class="icons  w3-card-4 w3-teal "> <i class="w3-padding fab fa-html5 w3-large" ></i> HTML5 </p>
+
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-css3 w3-large"></i> CSS-Grid </p>
+
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-css3 w3-large"></i> CSS-W3 </p>
+
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-js w3-large"></i> JavaScript </p>
+
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-node w3-xlarge"></i> Node.js </p>
+
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fas fa-code w3-xlarge"></i> Express </p>
+    
+  </div>
+
+  <div class="w3-padding w3-large w3-theme-d2 w3-teal w3-cell-row ">
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fas fa-database w3-xlarge"></i> MongoDB </p>
+
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-git w3-xlarge"></i> Git </p>
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-github w3-xlarge"></i> Github </p>
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fas fa-edit w3-xlarge"></i> Sublime </p>
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-codepen w3-xlarge"></i> CodePen </p>
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fas fa-cloud w3-xlarge"></i> Cloud9 </p>
+  </div>
+  </div>
+</div>
+
+
+<div id="projects"class="w3-row-padding w3-padding-32">
+
+  <div  class="w3-quarter ">
+    <div  class="w3-card-4 w3-white"  id="project1" >
+      <a href="\color"</a>
+      <img src=""    alt="ColorQuizz" style="width:100%">
+        <div class="w3-container">
+          <h3>ColorQuizz</h3>
+        </div>
+    </div>
+  </div>
+
+<div class="w3-quarter">
+    <div class="w3-card-4 w3-white" id="project2" >
+      <img src="" alt="...coming soon" style="width:100%">
+
+      <div class="w3-container">
+        <h3>Project 2</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card-4 w3-white" id="project3" >
+      <img src="" alt="...coming soon" style="width:100%">
+
+      <div class="w3-container">
+        <h3>Project 3</h3>
+      </div>
+    </div>
+  </div>
+
+<div class="w3-quarter">
+    <div class="w3-card-4 w3-white" id="project4">
+      <img src="" alt="...coming soon" style="width:100%">
+
+      <div class="w3-container">
+        <h3>Project 4</h3>
+      </div>
+    </div>
+  </div>  
+
+</div>
+
+
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact me.</span></div>
+      
+      <p></p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Cumming, GA</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>404-513-6072, ET</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  dcpatel1@hotmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d2 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script type="text/javascript" src="main.js"></script>
+
+
+
+
+<p> Created by: Dinesh Patel </p> 
+</body>
+</html>
+

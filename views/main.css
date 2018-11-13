@@ -1,0 +1,30 @@
+
+.icons {
+  display:inline-block;
+  padding:10px;
+  margin:10px;
+  width: auto;
+  height: auto;
+  }
+
+.iconbox {
+  margin: 0px;
+  padding:0px;
+  }
+
+  #dcp:hover {
+		color : teal;
+  }
+
+  #dcp {
+  	margin: 0px;
+  }
+
+  #tech {
+  	margin: 3px;
+  	padding: 3px;
+  }
+  #techcard {
+  	margin: 3px;
+  	padding: 3px;
+  }
