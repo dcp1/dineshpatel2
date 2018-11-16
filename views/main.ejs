@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Front Page</title>
+<title>cloud9:dineshpatel2>views>main.ejs</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -11,13 +11,10 @@
 
 <link rel="stylesheet" type="text/css" href="/app.css">
 
-
-
-
 <body id="myPage">
   
 
-<!-- Sidebar on click -->
+<!-- Sidebar on click 
 <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
 
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
@@ -29,7 +26,7 @@
   <a href="#contact" class="w3-bar-item w3-button">Contact</a>
   
 </nav>
-
+-->
 <!-- Navbar -->
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-teal w3-left-align">
@@ -40,33 +37,33 @@
   <a href="#" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
 
   <a href="\profile" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Profile</a>
-
-  <a href="\color" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Projects</a>
+  
+  <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">Projects <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="\color" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">ColorQuizz</a>
+        <a  href="https://www.easymail-duluth.com" class="w3-bar-item w3-button">Easymail</a>
+      </div>
+    </div>
   
   <a href="#tech" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Technologies</a>
 
   <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Contact</a>
+  
+  <!-- rightmost on top bar, default is Dinesh Patel if date is not available-->
+<a href="#" id="#date" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white" title="Search">-Dinesh Patel</a>
 
-   <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-    </div>
-  </div>
-
-
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white" title="Search"><i class="fa fa-search"></i></a>
+  
  </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
     <a href="\profile" class="w3-bar-item w3-show w3-button">Profile</a>
-    <a href="\color" class="w3-bar-item w3-button">Projects</a>
+    <a href="https://www.easymail-duluth.com" class="w3-bar-item w3-button">Easymail</a>
+    <a href="\color" class="w3-bar-item w3-button">ColorQuizz</a>
     <a href="#tech" class="w3-bar-item w3-button">Technologies</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    <a href="#" class="w3-bar-item w3-button">Search</a>
+   
   </div>
 </div>
 
@@ -74,41 +71,40 @@
 <!-- Image Header -->
 <div class="w3-display-container  w3-circle w3-animate-opacity">
   <img src="https://source.unsplash.com/random/?spectrums" alt="spectrums" style="width:100%;min-height:350px;max-height:350px">
+
+
+<div class="w3-bar w3-theme-d2 w3-teal w3-center-align">
+  <span class="padding:5px">  Refresh the page to get a new image. Courtesy of www.unsplash.com </span>
 </div>
-
-
+</div>
 <div  class="w3-container ">
 
     <div class=" w3-center w3-panel ">
     <iframe src="\profile" height="260px" width="100%"  class="w3-border-3  w3-center w3-panel w3-card-4"> </iframe>
     </div>
-    
-    <div class="w3-bar w3-theme-d2 w3-teal w3-right-align">
-  <span>Refresh the page to get a new image. Courtesy of www.unsplash.com w3-border-teal</span>
-  
-</div>
-
-
+   </div> 
+   
 <div  id="tech"class="w3-container w3-display-container">
-  <div id="techcard" class="w3-border-3 w3-center w3-teal w3-panel w3-card-4">
+  <div id="techcard" class="w3-border-3 w3-center w3-teal w3-panel w3-card-2">
   
   <div  class=" iconbox w3-large w3-theme-d2 w3-teal w3-cell-row">
 
     <p class="icons  w3-card-4 w3-teal "> <i class="w3-padding fab fa-html5 w3-large" ></i> HTML5 </p>
 
-    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-css3 w3-large"></i> CSS-Grid </p>
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-css3 w3-large"></i> CSS: Bootstrap </p>
 
-    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-css3 w3-large"></i> CSS-W3 </p>
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-css3 w3-large"></i> W3.CSS </p>
 
     <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-js w3-large"></i> JavaScript </p>
-
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-js w3-xlarge"></i> JQuery </p>
+<p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fas fa-code w3-xlarge"></i> RESTful API </p>
     <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-node w3-xlarge"></i> Node.js </p>
 
-    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fas fa-code w3-xlarge"></i> Express </p>
     
   </div>
 
   <div class="w3-padding w3-large w3-theme-d2 w3-teal w3-cell-row ">
+    <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fas fa-code w3-xlarge"></i> Express </p>
     <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fas fa-database w3-xlarge"></i> MongoDB </p>
 
     <p class="icons  w3-card-4 w3-teal"> <i class="w3-padding fab fa-git w3-xlarge"></i> Git </p>
@@ -123,94 +119,80 @@
 
 <div id="projects"class="w3-row-padding w3-padding-32">
 
-  <div  class="w3-quarter ">
-    <div  class="w3-card-4 w3-white"  id="project1" >
-      <a href="\color"</a>
-      <img src=""    alt="ColorQuizz" style="width:100%">
-        <div class="w3-container">
-          <h3>ColorQuizz</h3>
+<div class="w3-third w3-center" >
+    <a href="\color"</a>
+      <div class="w3-card-4  w3-silver   padding:"0px"" id="project1">
+        <div class="w3-container  ">
+          <iframe src="\color"  class="w3-hover-border-teal w3-border-gray w3-center w3-panel "> 
+          </iframe>
         </div>
-    </div>
+      </div>
+    </a>
   </div>
 
-<div class="w3-quarter">
-    <div class="w3-card-4 w3-white" id="project2" >
-      <img src="" alt="...coming soon" style="width:100%">
-
-      <div class="w3-container">
-        <h3>Project 2</h3>
+<div class="w3-third w3-center" >
+     <a href="https://www.easymail-duluth.com" >
+      <div class="w3-card-4 w3-silver padding:"0px"" id="project2" >
+        <div class="w3-container">
+          <iframe src="https://www.easymail-duluth.com"  class=" w3-hover-border-teal w3-border-gray w3-center w3-panel "> 
+          </iframe>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
 
-  <div class="w3-quarter">
-    <div class="w3-card-4 w3-white" id="project3" >
-      <img src="" alt="...coming soon" style="width:100%">
-
-      <div class="w3-container">
-        <h3>Project 3</h3>
+<div class="w3-third w3-center" >
+    <a href="\color"</a>
+      <div class="w3-card-4  w3-silver   padding:"0px"" id="project1">
+        <div class="w3-container  ">
+          <iframe src="\color"  class="w3-hover-border-teal w3-border-gray w3-center w3-panel "> 
+          </iframe>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
+</div><!-- Project raw ends -->
 
-<div class="w3-quarter">
-    <div class="w3-card-4 w3-white" id="project4">
-      <img src="" alt="...coming soon" style="width:100%">
-
-      <div class="w3-container">
-        <h3>Project 4</h3>
-      </div>
-    </div>
-  </div>  
-
-</div>
-
-
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+<!-- starts conatct, map, wether -->
+<div class="w3-container w3-center-align w3-padding-14 " id="contact">
   <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact me.</span></div>
-      
-      <p></p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Cumming, GA</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>404-513-6072, ET</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  dcpatel1@hotmail.com</p>
-    </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">      
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
+
+    <div class="w3-col m4">
+    <div class="w3-padding-14 w3-center-align"><span class="w3-large w3-border-teal ">Contact me today...</span></div>
+    <p><i class="fa fa-map-marker w3-margin-right w3-text-teal w3xlarge"></i>Cumming, Ga</p>
+      <p><i class="fa fa-mobile-alt w3-text-teal w3-margin-right w3-xlarge"></i>404-513-6072 </p>
+      <p><i class="fa fa-envelope-square w3-margin-right w3-text-teal w3-xlarge"></i>dcpatel1@hotmail.com</p>
+    </div><!-- end of conatct me today box -->
+    
+    <div class="w3-col m4">
+    <div id="map" class="w3-padding-14" w3-center-align></div>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52796.21075678995!2d-84.16564911439792!3d34.203526974464125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f58523717bebd7%3A0x1f85f06242e1c19d!2sCumming%2C+GA!5e0!3m2!1sen!2sus!4v1542133987173" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> 
+          </div><!-- end of map -->
+          
+    <div id="weather" class="w3-col m4">
+      <div class="w3-container w3-text-teal w3-padding-14 " >      
+        <div id="cont_20f6125bbc9f1c2ae0ff93677331da18"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/20f6125bbc9f1c2ae0ff93677331da18"></script></div>   
       </div>
-      <div class="w3-section">      
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">      
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
-    </div>
+    </div><!-- end of weather -->
+  
   </div>
-</div>
-
-<!-- Image of location/map -->
-
+</div><!-- end of contact box -->
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d2 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-
+  <ul style="list-style-type: none" >Thanks to:
+    <li>www.sublimetext.com</li>
+    <li>https://github.com.com</li>
+    <li>www.freenom.com</li>
+    <li>www.heroku.com</li>
+    <li>https://nodejs.org</li>
+    <li>https://expressjs.com</li>
+    <li>https://npmjs.com</li>
+    <li>www.unsplash.com</li>
+    <li>www.theweather.com</li>
+    <li>...and many more.</li>
+  </ul>
+  <p> Developed by: Dinesh Patel </p>
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
     <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
@@ -220,10 +202,7 @@
 
 <script type="text/javascript" src="main.js"></script>
 
-
-
-
-<p> Created by: Dinesh Patel </p> 
+ 
 </body>
 </html>
 
